@@ -1,0 +1,144 @@
+@my-font-color:#fff;
+@my-font-style:'微软雅黑';
+h1,h2,h3,h4,h5,h6,p,a,div,span,i,b,button,input{
+  font-family:@my-font-style;
+}
+input{
+  background:#fff;
+}
+.my-start{
+  position: relative;
+  >div{
+    position: absolute;
+    z-index: 100;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -o-border-radius:50%;
+    -moz-border-radius:50%;
+    right:5px;
+    top:5px;
+    background:rgba(255,255,255,0.8);
+    padding-top:5px;
+  }
+}
+.my-detail-tab-item{
+  max-width:100%;
+  .img-responsive{
+    display: block;
+    width: 100%;
+    max-height:320px;
+  }
+}
+.my-ui-view{
+  margin-top:53px;
+}
+.my-input{
+  input{
+    border:1px solid #ddd;
+    width:100%;
+    border-radius: 5%;
+    padding:0 3%;
+  }
+}
+.my-login-alert{
+  height:57px;
+  width:100%;
+  color:#fff;
+  position:fixed;
+  top:-58px;
+  left:0;
+  z-index:10;
+}
+.my-cart-delete{
+  float:right;
+  &:hover{
+    color:red;
+  }
+}
+.my-font-color{
+  >.button,h1{
+    color: @my-font-color;
+  }
+}
+
+//文章字体颜色，浅色
+@font-color-article:#666;
+//整体边框颜色
+@border-color:#f2f2f2;
+.my-home {
+  margin: 0 auto;
+  transform: translateX(-50%);
+  -webkit-transform:translateX(-50%);
+  -o-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
+}
+img{
+  max-width:100%;
+}
+.my-scroll.my-scroll-x-none{
+  @my-scroll-width:100%;
+  width:@my-scroll-width;
+  overflow-x:hidden;
+  margin-top:-10px;
+  .my-scroll-x{
+    width:2.3*@my-scroll-width;
+    padding:0;
+    margin-top:10px;
+    >a{
+      display: inline-block;
+      height:60px;
+      min-height: 55px;
+      border-right:1px solid #ddd;
+      padding-left:50px;
+      width:2*@my-scroll-width/6;
+      >img{
+        left:0;
+      }
+      >p,h1,h2,h3,h4,h5,h6{
+        overflow: visible;
+      }
+      >p{
+        color:@font-color-article;
+        margin-top:5px;
+      }
+    }
+  }
+}
+.my-head-new{
+  border-right:2px solid @border-color;
+  margin-top:10px;
+}
+.my-list{
+  list-style: disc;
+  list-style-position: inside;
+  padding-left:20px;
+  margin-top:10px;
+  >li:first-child{
+    margin-bottom:6px;
+  }
+  >li{
+    color:@font-color-article;
+    >a {
+      color:@font-color-article;
+      text-decoration: none;
+    }
+  }
+}
+.my-scroll-news{
+  border-bottom:1px solid @border-color;
+  padding:0;
+  margin:5px 0;
+  background:#fff;
+  div{
+    padding:0;
+  }
+  >div:first-child{
+    border-right:1px solid @border-color;
+  }
+}
+
+.my-newmain-bg{
+  background: #ddd;
+}

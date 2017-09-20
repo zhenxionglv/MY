@@ -1,0 +1,151 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div,
+span,
+i,
+b,
+button,
+input {
+  font-family: '微软雅黑';
+}
+input {
+  background: #fff;
+}
+.my-start {
+  position: relative;
+}
+.my-start > div {
+  position: absolute;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  right: 5px;
+  top: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  padding-top: 5px;
+}
+.my-detail-tab-item {
+  max-width: 100%;
+}
+.my-detail-tab-item .img-responsive {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+}
+.my-ui-view {
+  margin-top: 53px;
+}
+.my-input input {
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 5%;
+  padding: 0 3%;
+}
+.my-login-alert {
+  height: 57px;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  top: -58px;
+  left: 0;
+  z-index: 10;
+}
+.my-cart-delete {
+  float: right;
+}
+.my-cart-delete:hover {
+  color: red;
+}
+.my-font-color > .button,
+.my-font-color h1 {
+  color: #fff;
+}
+.my-home {
+  margin: 0 auto;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+}
+img {
+  max-width: 100%;
+}
+.my-scroll.my-scroll-x-none {
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: -10px;
+}
+.my-scroll.my-scroll-x-none .my-scroll-x {
+  width: 230%;
+  padding: 0;
+  margin-top: 10px;
+}
+.my-scroll.my-scroll-x-none .my-scroll-x > a {
+  display: inline-block;
+  height: 60px;
+  min-height: 55px;
+  border-right: 1px solid #ddd;
+  padding-left: 50px;
+  width: 33.33333333%;
+}
+.my-scroll.my-scroll-x-none .my-scroll-x > a > img {
+  left: 0;
+}
+.my-scroll.my-scroll-x-none .my-scroll-x > a > p,
+.my-scroll.my-scroll-x-none .my-scroll-x > a h1,
+.my-scroll.my-scroll-x-none .my-scroll-x > a h2,
+.my-scroll.my-scroll-x-none .my-scroll-x > a h3,
+.my-scroll.my-scroll-x-none .my-scroll-x > a h4,
+.my-scroll.my-scroll-x-none .my-scroll-x > a h5,
+.my-scroll.my-scroll-x-none .my-scroll-x > a h6 {
+  overflow: visible;
+}
+.my-scroll.my-scroll-x-none .my-scroll-x > a > p {
+  color: #666;
+  margin-top: 5px;
+}
+.my-head-new {
+  border-right: 2px solid #f2f2f2;
+  margin-top: 10px;
+}
+.my-list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.my-list > li:first-child {
+  margin-bottom: 6px;
+}
+.my-list > li {
+  color: #666;
+}
+.my-list > li > a {
+  color: #666;
+  text-decoration: none;
+}
+.my-scroll-news {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 0;
+  margin: 5px 0;
+  background: #fff;
+}
+.my-scroll-news div {
+  padding: 0;
+}
+.my-scroll-news > div:first-child {
+  border-right: 1px solid #f2f2f2;
+}
+.my-newmain-bg {
+  background: #ddd;
+}

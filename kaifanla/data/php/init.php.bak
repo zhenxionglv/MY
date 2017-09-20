@@ -1,0 +1,4 @@
+<?php
+    header('content-type:application/json;charset=utf-8');
+    $conn=mysqli_connect('w.rdc.sae.sina.com.cn','4j0y5mmkj3','5344hmzxxmz24j003045zyi14wyiw2hj411h4ixz','app_greedyq');
+    mysqli_query($conn,'set names utf8');

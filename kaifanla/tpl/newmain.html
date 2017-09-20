@@ -1,0 +1,95 @@
+<ion-content class="my-newmain-bg has-footer has-header">
+            <!--模块1--banner轮播-->
+            <ion-slide-box auto-play="true" does-continue="true" slide-interval='3000' on-slide-changed="slideHasChanged(index)" delegate-handle="slideimgs" class="slidebox"  style="margin-top: -1px">
+                <ion-slide ng-repeat="ban in banList">
+                    <a href="#" class="box banner"><img ng-src="img/{{ban.src}}" class=""/>
+                    </a>
+                </ion-slide>
+            </ion-slide-box>
+
+            <!--模块2---banner下课拖动块-->
+            <!--scrollbar-x='false'去掉滚动时的滚动条,去掉自带滚动条还需要在css把overflow-x:scroll去掉，换成hidden-->
+            <ion-scroll direction="x" scrollbar-x="false" class="my-scroll my-scroll-x-none" has-bouncing="false">
+                <div class="list my-scroll-x row">
+                    <a href="#" class="item item-avatar">
+                        <img src="img/qiezi-s.png" alt=""/>
+                        <h2>产品经理</h2>
+                        <p>共206篇文章</p>
+                    </a>
+                    <a href="#" class="item item-avatar">
+                        <img src="img/p9210.jpg" alt=""/>
+                        <h2>Web前端</h2>
+                        <p>共143篇文章</p>
+                    </a><a href="#" class="item item-avatar">
+                    <img src="img/p0281.jpg" alt=""/>
+                    <h2>Java</h2>
+                    <p>共125篇文章</p>
+                </a><a href="#" class="item item-avatar">
+                    <img src="img/p7818.jpg" alt=""/>
+                    <h2>Java</h2>
+                    <p>共125篇文章</p>
+                </a>
+                    </a><a href="#" class="item item-avatar">
+                    <img src="img/p7818.jpg" alt=""/>
+                    <h2>Java</h2>
+                    <p>共125篇文章</p>
+                </a>
+                    </a><a href="#" class="item item-avatar">
+                    <img src="img/p7818.jpg" alt=""/>
+                    <h2>Java</h2>
+                    <p>共125篇文章</p>
+                </a>
+                </div>
+
+            </ion-scroll>
+
+        <!--模块3---今日头条    -->
+            <div class="my-scroll-news">
+                <div class="row">
+                    <div class="col col-25 text-center my-head-new">
+                        <h4>今日</h4>
+                        <h4>推介</h4>
+                    </div>
+
+                    <!--向上自动滚动新闻-->
+                    <div class="col">
+                        <div class="my-news-front">
+                            <ul class="my-list padding-vertical text-left">
+                                <li>
+                                    <a href="#">超好吃的宫保鸡丁,外国人抢着吃!</a>
+                                </li>
+                                <li>
+                                    <a href="#">骚年,来一碗超级水煮肉</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="my-news-back"></div>
+                        <div class="my-news-top"></div>
+                        <div class="my-news-bottom"></div>
+                    </div>
+                </div>
+            </div>
+
+<!--产品介绍  -->
+    <div class="list">
+        <a href="#/commen/detail/{{list.did}}" class="item item-thumbnail-left" ng-repeat="list in dishList track by $index">
+            <img ng-src="img/{{list.img_sm}}" alt=""/>
+            <h2>{{list.name}}</h2>
+            <p>{{list.detail}}</p>
+            <p style="color:red">{{list.price | currency:'￥'}}</p>
+        </a>
+    </div>
+
+    <!--滚动加载更多数据-->
+    <ion-infinite-scroll ng-if="hasMore" imediate-check="false"  on-infinite="loadMore()">
+    </ion-infinite-scroll>
+
+    <div class="list" ng-if="!hasMore">
+        <div class='item calm-bg'>
+            <span class="ion ion-android-warning"></span>
+            没有更多数据了了！
+        </div>
+    </div>
+
+
+        </ion-content>
